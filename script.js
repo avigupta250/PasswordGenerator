@@ -1,8 +1,8 @@
 const inputSlider=document.querySelector("[data-lengthSlider]");
 const lengthDisplay=document.querySelector("[data-lengthNumber]");
 const passwordDisplay = document.querySelector("[data-passwordDisplay]");
-const copyBtn = document.querySelector("[data-copy]");
-const copyMsg = document.querySelector("[data-copyMsg]");
+// const copyBtn = document.querySelector("[data-copy]");
+// const copyMsg = document.querySelector("[data-copyMsg]");
 const uppercaseCheck= document.querySelector("#uppercase");
 const lowercaseCheck= document.querySelector("#lowercase");
 const numbersCheck= document.querySelector("#numbers");
@@ -92,26 +92,26 @@ function calcStrength() {
       setIndicator("#f00");
     }
 }
- async function copyContent()
-{
-    try{
-        // Copy the text inside the text field
-        await navigator.clipboard.writeText(passwordDisplay.value);
-        copyMsg.innerText="Copied";
+//  async function copyContent()
+// {
+//     try{
+//         // Copy the text inside the text field
+//         await navigator.clipboard.writeText(passwordDisplay.value);
+//         copyMsg.innerText="Copied";
 
-    }
+//     }
 
-    catch(e)
-    {
-        copyMsg.innerText="failed"; 
-    }
-    // to make copy wala span visible
-    copyMsg.classList.add("active");
+//     catch(e)
+//     {
+//         copyMsg.innerText="failed"; 
+//     }
+//     // to make copy wala span visible
+//     copyMsg.classList.add("active");
 
-    setTimeout(() => {
-        copyMsg.classList.remove("active");
-    }, 2000);
-}
+//     setTimeout(() => {
+//         copyMsg.classList.remove("active");
+//     }, 2000);
+// }
 function shufflePassword(array) {
     //Fisher Yates Method
     for (let i = array.length - 1; i > 0; i--) {
