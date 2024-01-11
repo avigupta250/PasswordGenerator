@@ -152,10 +152,10 @@ inputSlider.addEventListener('input',(val)=>{
     handleSlider();
 })
 
-copyBtn.addEventListener('click',()=>{
-    if(passwordDisplay.value)
-    copyContent ();
-})
+// copyBtn.addEventListener('click',()=>{
+//     if(passwordDisplay.value)
+//     copyContent ();
+// })
 
 generateBtn.addEventListener('click', () => {
     //none of the checkbox are selected
